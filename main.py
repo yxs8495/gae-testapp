@@ -38,7 +38,7 @@ app = webapp2.WSGIApplication([
 ], debug=True)
 
 # run on server
-localhost = True  # True: non-GAE localhost server; False: GAE on either localhost or on Google Cloud
+localhost = False # True: non-GAE localhost server; False: GAE on either localhost or on Google Cloud
 if localhost:
     def main():
         from paste import httpserver
